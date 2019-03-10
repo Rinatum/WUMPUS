@@ -8,6 +8,16 @@
 > - So, algorithm can give you different solutions because of randomness.
 
 ## Consider solvable environment example:
+> - Code snippet of map declaration:
+```
+wumpus(1, 3).
+gold(4, 3).
+exit(1, 1).
+pit(2, 5).
+pit(3, 5).
+pit(3, 1).
+pit(5, 2).
+```
 
 | BREEZE   😰  	|    PIT 💀   	|  PIT    💀   	| BREEZE   😰 	|            	|
 |-------------	|:----------:	|------------:	|------------	|------------	|
@@ -28,6 +38,19 @@ Paths = [[1, 1], [1, 2], "💩MISS💩", [2, 2], [2, 3], [3, 3], [4, 3], ["👑G
 >   - Else we have only 1 way to get the GOLD.
 
 ## Consider unsolvable environment example:
+
+> - Code snippet of map declaration:
+```
+wumpus(1, 3).
+gold(4, 3).
+exit(1, 1).
+pit(2, 5).
+pit(3, 5).
+pit(3, 1).
+pit(5, 2).
+pit(2, 1).
+pit(1, 2).
+```
 
 | BREEZE   😰 	|   PIT 💀  	|  PIT    💀   	| BREEZE   😰 	|            	|
 |------------	|:--------:	|------------:	|------------	|------------	|
